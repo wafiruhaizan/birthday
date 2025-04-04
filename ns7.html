@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Syaf!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6f0, #f0f8ff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff69b4;
+      margin-top: 30px;
+      animation: floatText 3s ease-in-out infinite;
+      text-shadow: 2px 2px 5px white;
+    }
+
+    p {
+      font-size: 1.4em;
+      color: #663399;
+      max-width: 700px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px pink;
+    }
+
+    .image-container {
+      margin-top: 30px;
+    }
+
+    img {
+      width: 220px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .star {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: yellow;
+      border-radius: 50%;
+      box-shadow: 0 0 10px yellow;
+      animation: twinkle 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 10px pink; }
+      to { box-shadow: 0 0 30px #ffb6c1; }
+    }
+
+    @keyframes floatText {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+
+  <h1>Happy Birthday Syaf!</h1>
+
+  <div class="image-container">
+    <img src="CE03EA7F-8B4B-4E91-B99D-1001DC3F97AD.png" alt="Syaf">
+  </div>
+
+  <p>
+    Semoga hari jadi ini menjadi permulaan kepada kebahagiaan yang berpanjangan.<br>
+    Awak seorang yang luar biasa, penyayang dan sangat berharga.<br>
+    Terima kasih kerana mewarnai dunia dengan senyuman awak!<br><br>
+    May your day be filled with laughter, sparkle and sweet surprises!
+  </p>
+
+  <script>
+    // Generate twinkling stars
+    const starsContainer = document.getElementById('stars');
+    for (let i = 0; i < 25; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.animationDelay = Math.random() * 2 + 's';
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
